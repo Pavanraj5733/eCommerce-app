@@ -31,7 +31,7 @@ export const fetchProductDetails = createAsyncThunk(
   "/products/fetchProductDetails",
   async (id) => {
     const result = await axios.get(
-      `${import.meta.env.VITE_API_URL}/api/shop/products/get/${id}`
+      `https://fastapi-0a7f.onrender.com/products/${id}`
     );
 
     return result?.data;
